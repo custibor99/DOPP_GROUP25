@@ -1,0 +1,9 @@
+*.csv
+*.gml
+*.json
+*.png
+*.ipynb_checkpoints
+*.egg-info
+*/data/*
+*/images/*
+

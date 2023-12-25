@@ -11,4 +11,6 @@ to install all of the needed libraries run:
 pip install -e .
 ```
 
+# Documentation
 
+- [Data Documentation](/docs/data_docs.md) 

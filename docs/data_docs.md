@@ -7,6 +7,7 @@ The folowing data sources have been used in the project:
 - [Chronotrains API](https://www.chronotrains.com/en) was used for obtaining train travel times between different cities
 - [List of largest european airports](https://airmundo.com/en/blog/airport-codes-european-airports/) according to AirMundo travel agency.
 - [Pythons countryinfo package](https://github.com/porimol/countryinfo) for getting neighborings of european countries.
+- [Google maps distance matrix api](https://developers.google.com/maps/documentation/distance-matrix/overview) used for obtaining driving distances and durations between cities.
 
 ## Tabular files
 
@@ -44,9 +45,17 @@ Contains city latitude and longitude obtained from [Google Maps Geocode API](htt
 | lat  | Latitude  |
 | lng  | Longitude  |
 
+
+### airport_coordinates.csv
+Contains city latitude and longitude obtained from [Google Maps Geocode API](https://developers.google.com/maps/documentation/geocoding/overview)
+| Variable  | Description |
+| ------------- | ------------- |
+| iata_code  | AIrport iata code  |
+| lat  | Latitude  |
+| lng  | Longitude  |
+
 ## Network files
 Network files are saved in the [.gml](https://networkx.org/documentation/stable/reference/readwrite/gml.html) file format developed by the creators of the [networkx](https://networkx.org/documentation/stable/index.html) python library. 
-
 
 ### Country_network.gml
 Contains the network structure of european countries. Countries are connected to their neighbors. 
@@ -58,6 +67,8 @@ may not travel trough any of the Citys that we defined for country B. This has b
 ### City_train_network_duration.gml
 Contains the same structure as **City_train_network.gml** except that it has weighted nodes. The nodes are weighted based on the travel duration from the [Chronotrain Api](https://www.chronotrains.com/en). If is no train connection between two cities, then the value 99999 is used.
 
+### City_car_network.gml
+A netowrk containing all cities from the **chronotrains.csv** file that have a valid id. The constructed graphs should be fully connected. Each edge has two attributes; distance (meters) and duration (seconds). If a edge does not exist, there exist no connection between the locations according to the google maps api. 
 
 
 

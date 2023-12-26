@@ -11,7 +11,7 @@ import requests
 
 
 def get_weight(id1: int, id2: int) -> int:
-    res = 9999999
+    res = None
     url = f"https://www.chronotrains.com/api/trip/{id1}/{id2}"
     url_parsed = urllib.parse.quote(url, safe="://")
     response = requests.get(url_parsed)
@@ -26,6 +26,7 @@ def get_weight(id1: int, id2: int) -> int:
             res = json_response["suggestion"]["duration"]
         except:
             pass
+    time.sleep(0.5)
     return res
 
 def main():
@@ -47,9 +48,10 @@ def main():
             weight = G[node1][node2]["weight"]
         except:
             weight = get_weight(id1, id2)
-            G[node1][node2]["weight"] = weight    
+            if weight != None:
+                G[node1][node2]["weight"] = weight    
             i += 1
-            time.sleep(0.5)
+            
         
         #save to file every 15 iterations
         if i % 15 == 0:

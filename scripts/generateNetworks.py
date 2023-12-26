@@ -22,7 +22,7 @@ def generate_country_network(country_metadata: pd.DataFrame) -> nx.Graph:
     return G
 
 def generate_city_network(country_network, country_metadata, chronotrain_data)-> nx.Graph:
-    merged = chronotrain_data.merge(country_metadata, on="Country")
+    merged = chronotrain_data.merge(country_metadata, on="Country").dropna()
     city_network = nx.Graph()
     for id, city in merged[["chronotrain_id", "city"]].values:
         city_network.add_nodes_from([(city, {"chronotrain_id":id})])

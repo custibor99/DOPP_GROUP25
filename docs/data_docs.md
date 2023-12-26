@@ -3,10 +3,10 @@
 This file contains description of all of the data files/sources used in the project. All of the data files can be found on [google drive](https://drive.google.com/drive/folders/1z65-V_g7631HaKvFRhrFEAztKkKnKc_s?usp=drive_link) or can be generated manually with the provided scripts.
 ## Data Sources
 The folowing data sources have been used in the project:
-- [Google Maps Geocode API](https://developers.google.com/maps/documentation/geocoding/overview) were used for obtaining latitude and longitude coordinates of cities
-- [Chronotrains API](https://www.chronotrains.com/en) was used for obtaining train travel times between different cities
 - [List of largest european airports](https://airmundo.com/en/blog/airport-codes-european-airports/) according to AirMundo travel agency.
 - [Pythons countryinfo package](https://github.com/porimol/countryinfo) for getting neighborings of european countries.
+- [Chronotrains API](https://www.chronotrains.com/en) was used for obtaining train travel times between different cities
+- [Google Maps Geocode API](https://developers.google.com/maps/documentation/geocoding/overview) were used for obtaining latitude and longitude coordinates of cities
 - [Google maps distance matrix api](https://developers.google.com/maps/documentation/distance-matrix/overview) used for obtaining driving distances and durations between cities.
 
 ## Tabular files

@@ -62,10 +62,10 @@ Contains the network structure of european countries. Countries are connected to
 
 ### City_train_network.gml
 Contains a network of cities. Cities are connected if they are in the same country or neighboring country. This is a simplification of the actuall train network. Some trains that travel from country A to country C trough country B
-may not travel trough any of the Citys that we defined for country B. This has been done to decrease the ammount of [API](https://www.chronotrains.com/en) calls as each one takes a few seconds to complete. This alowed us to reduce the number of api cals from around 50000 to 4000.
+may not travel trough any of the Citys that we defined for country B. This has been done to decrease the ammount of [API](https://www.chronotrains.com/en) calls as each one takes a few seconds to complete. This alowed us to reduce the number of api cals from around 50000 to 4000. It only contains cities with valid chronotain ids.
 
 ### City_train_network_duration.gml
-Contains the same structure as **City_train_network.gml** except that it has weighted nodes. The nodes are weighted based on the travel duration from the [Chronotrain Api](https://www.chronotrains.com/en). If is no train connection between two cities, then the value 99999 is used.
+Contains the same structure as **City_train_network.gml** except that it has weighted nodes. The nodes are weighted based on the travel duration from the [Chronotrain Api](https://www.chronotrains.com/en). If is no train connection between two cities, then the value 99999 is used. It only contains cities with valid chronotain ids.
 
 ### City_car_network.gml
 A netowrk containing all cities from the **chronotrains.csv** file that have a valid id. The constructed graphs should be fully connected. Each edge has two attributes; distance (meters) and duration (seconds). If a edge does not exist, there exist no connection between the locations according to the google maps api. 

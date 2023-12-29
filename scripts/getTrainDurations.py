@@ -10,6 +10,7 @@ import json
 import requests
 
 
+
 def get_weight(id1: int, id2: int) -> int:
     res = None
     url = f"https://www.chronotrains.com/api/trip/{id1}/{id2}"
@@ -49,7 +50,9 @@ def main():
         except:
             weight = get_weight(id1, id2)
             if weight != None:
-                G[node1][node2]["weight"] = weight    
+                G[node1][node2]["weight"] = weight
+            else:
+                G.remove_edge(node1, node2)     
             i += 1
             
         

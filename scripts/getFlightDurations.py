@@ -6,13 +6,18 @@ import os
 
 # To consider:
 # Aircraft speed varies greatly by model, flight distance and airline (fuel cost)
+# Incorporate this data?
+# https://www.researchgate.net/figure/Relation-between-flight-distance-and-speed-for-intra-European-flights-2018_fig2_338595902
+
 # Prevailing winds (global, seasonal trends). Used to calculate true airspeed,
 # not sure of significance at short distance flights
+
 # Outbound/ inbound flights within Europe might have up to 25 minutes difference.
 # Calculations are still a *little* off.
 
+
 # Average plane speed for short distance commercial flights (in m/h)
-avg_speed = 560000
+avg_speed = 550000
 
 # Average boarding time (in minutes)
 boarding_time = 30
@@ -50,12 +55,10 @@ def main():
     airport_coordinates = pd.read_csv('../data/airport_coordinates.csv')
     airport_data = airport_metadata.merge(airport_coordinates, left_on="IATA airport code", right_on="iata_code")
 
-    # make graph (nodes = airport, edge weights = duration)
-
-    if os.path.isfile("../data/flight_network.gml"):
-        G = nx.read_gml("../data/flight_network.gml")
-    else:
-        G = nx.Graph()
+    #if os.path.isfile("../data/flight_network.gml"):
+    #    G = nx.read_gml("../data/flight_network.gml")
+    #else:
+    G = nx.Graph()
 
     for idx_place, place in tqdm(airport_data.iterrows()):
         for idx_dest, dest in airport_data.iterrows():

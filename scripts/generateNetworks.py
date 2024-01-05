@@ -3,6 +3,7 @@ import networkx as nx
 import numpy as np
 import time 
 from itertools import product
+import FlightEstimator
 
 def get_neighbors_by_country_code(country_metadata:pd.DataFrame, iso_code: str) -> list:
     n = country_metadata.query(f"iso_country_code == '{iso_code}'")["neighbors"].values[0]
@@ -47,9 +48,36 @@ def generate_city_network(country_network, country_metadata, chronotrain_data)->
             
     return city_network
 
+def generate_airport_network(airport_data):
+    airport_network = nx.Graph()
+
+    airport_network.add_nodes_from(
+        [(iata, {"city": city}) for (iata, city) in list(zip(airport_data['iata_code'], airport_data['city']))])
+    skipped = 0
+    for idx_place, place in airport_data.iterrows():
+        for idx_dest, dest in airport_data.iterrows():
+
+            # Graph is undirected with no self loops.
+            if airport_network.has_edge(place["iata_code"], dest["iata_code"]) or place["iata_code"] == dest["iata_code"]:
+                continue
+
+            distance = FlightEstimator.calculate_distance(place["lat"], place["lng"], dest["lat"], dest["lng"])
+            if distance < FlightEstimator.distance_threshhold:
+                airport_network.add_edge(place["iata_code"], dest["iata_code"], distance=distance)
+            else:
+                skipped += 1
+
+    print(f"Airport Network: Skipped {skipped} edges that where outside of the distance threshhold. "
+          f"Graph has {airport_network.number_of_nodes()} nodes (airports) and {airport_network.number_of_edges()} edges (routes)")
+    return airport_network
+
 def main():
     country_metadata = pd.read_csv("../data/country_metadata.csv")
     chronotrain_data = pd.read_csv("../data/chronotrains.csv")
+
+    airport_metadata = pd.read_csv("../data/airport_metadata.csv")
+    airport_coordinates = pd.read_csv("../data/airport_coordinates.csv")
+    airport_data = airport_metadata.merge(airport_coordinates, left_on="IATA airport code", right_on="iata_code")
     
     start = time.time()
     G = generate_country_network(country_metadata)
@@ -61,7 +89,13 @@ def main():
     city_network = generate_city_network(G, country_metadata, chronotrain_data)
     nx.write_gml(city_network, "../data/city_train_network.gml")
     end = time.time()
-    print(f"Generated file data/country_network.txt in {end-start} seconds") 
+    print(f"Generated file data/country_network.txt in {end-start} seconds")
+
+    start = time.time()
+    airport_network = generate_airport_network(airport_data)
+    nx.write_gml(airport_network, "../data/airport_network.gml")
+    end = time.time()
+    print(f"Generated file data/airport_network.gml in {round(end - start, 2)} seconds")
 
 
 if __name__ == "__main__":

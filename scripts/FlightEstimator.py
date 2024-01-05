@@ -1,8 +1,10 @@
 import math
+import sys
+import os
+import time
 import pandas as pd
 import networkx as nx
 from tqdm import tqdm
-import os
 
 # To consider:
 # Aircraft speed varies greatly by model, flight distance and airline (fuel cost)
@@ -13,17 +15,21 @@ import os
 # not sure of significance at short distance flights
 
 # Outbound/ inbound flights within Europe might have up to 25 minutes difference.
-# Calculations are still a *little* off.
 
 
 # Average plane speed for short distance commercial flights (in m/h)
 avg_speed = 550000
 
+# https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-40-taxi-times
 # Average boarding time (in minutes)
 boarding_time = 30
 
 # Average time to leave the plane (in minutes)
 alight_time = 15
+
+# Threshhold for what we define as short distance flights (in meters).
+# Any flight route with a distance over this threshhold will not be added to the graph.
+distance_threshhold = sys.maxsize
 
 
 # https://www.movable-type.co.uk/scripts/latlong.html
@@ -45,33 +51,6 @@ def calculate_distance(lat1, lon1, lat2, lon2) -> int:
 
 
 def calculate_duration(distance) -> int:
-    flight_duration = distance / avg_speed
+    flight_duration = (distance / avg_speed) * 60
     full_duration = flight_duration + boarding_time + alight_time
-    return round(full_duration * 60 * 60)
-
-
-def main():
-    airport_metadata = pd.read_csv('../data/airport_metadata.csv')
-    airport_coordinates = pd.read_csv('../data/airport_coordinates.csv')
-    airport_data = airport_metadata.merge(airport_coordinates, left_on="IATA airport code", right_on="iata_code")
-
-    #if os.path.isfile("../data/flight_network.gml"):
-    #    G = nx.read_gml("../data/flight_network.gml")
-    #else:
-    G = nx.Graph()
-
-    for idx_place, place in tqdm(airport_data.iterrows()):
-        for idx_dest, dest in airport_data.iterrows():
-            if G.has_edge(place['city'], dest['city']):
-                continue
-
-            distance = calculate_distance(place['lat'], place['lng'], dest['lat'], dest['lng'])
-            duration = calculate_duration(distance)
-            G.add_edge(place['city'], dest['city'], distance=distance, duration=duration)
-
-    nx.write_gml(G, "../data/flight_network.gml")
-
-
-if __name__ == "__main__":
-    main()
-
+    return round(full_duration * 60)

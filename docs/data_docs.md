@@ -16,7 +16,7 @@ Contains data about major european airports.
 
 | Variable  | Description |
 | ------------- | ------------- |
-| Airport  | name of the eirport  |
+| Airport  | name of the airport  |
 | Country  | country of airport  |
 | IATA Airport code  | IATA code  |
 | ICAO Airport code  | ICAO code  |

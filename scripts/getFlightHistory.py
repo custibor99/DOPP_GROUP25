@@ -1,6 +1,8 @@
+import networkx as nx
 import pandas as pd
 import requests
 import urllib.parse
+import os
 from tqdm import tqdm
 
 # Airlabs
@@ -13,12 +15,29 @@ from tqdm import tqdm
 # https://www.flightradar24.com/data/flights/{flight_iata}#{id}
 
 
-def fetch_airport_schedules(airports):
-    API_KEY = input("Enter your API key")
+# Free plan only gives max 50 routes per airport. Full route map cannot be constructed this way due to missing routes.
+def fetch_routes(airports, api_key):
+    routes = []
+
+    for airport_iata in tqdm(airports.index):
+        url = f"https://airlabs.co/api/v9/routes?dep_iata={airport_iata}&api_key={api_key}"
+        url_parsed = urllib.parse.quote(url, safe="://=?&")
+        response = requests.get(url_parsed)
+
+        if response.status_code == 200:
+            try:
+                routes.extend(response.json()["response"])
+            except Exception as e:
+                print(e)
+
+    return pd.DataFrame.from_records(routes)
+
+
+def fetch_schedules(airports, api_key):
     schedules = []
 
     for airport_iata in tqdm(airports.index):
-        url = f"https://airlabs.co/api/v9/schedules?dep_iata={airport_iata}&api_key={API_KEY}"
+        url = f"https://airlabs.co/api/v9/schedules?dep_iata={airport_iata}&api_key={api_key}"
         url_parsed = urllib.parse.quote(url, safe="://=?&")
         response = requests.get(url_parsed)
 
@@ -62,7 +81,20 @@ def main():
     airports = pd.read_csv("../data/airport_metadata.csv")
     airports.set_index("IATA airport code", inplace=True)
 
-    schedules = fetch_airport_schedules(airports)
+    airport = nx.read_gml("../data/airport_network.gml")
+    city = nx.read_gml("../data/city_train_network_duration.gml")
+
+    api_key = input("Enter your API key")
+
+#    if not os.path.isfile("..data/airport_routes.csv"):
+#        routes = fetch_routes(airports, api_key)
+
+    schedules = fetch_schedules(airports, api_key)
+
+    if os.path.isfile("../data/airport_schedules.csv"):
+        schedules_cached = pd.read_csv("../data/airport_schedules.csv")
+        schedules = pd.concat([schedules_cached, schedules])
+
     schedules.to_csv("../data/airport_schedules.csv", index=False)
 
 

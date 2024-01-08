@@ -54,3 +54,4 @@ def calculate_duration(distance) -> int:
     flight_duration = (distance / avg_speed) * 60
     full_duration = flight_duration + boarding_time + alight_time
     return round(full_duration * 60)
+

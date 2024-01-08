@@ -8,6 +8,7 @@ The folowing data sources have been used in the project:
 - [Chronotrains API](https://www.chronotrains.com/en) was used for obtaining train travel times between different cities
 - [Google Maps Geocode API](https://developers.google.com/maps/documentation/geocoding/overview) were used for obtaining latitude and longitude coordinates of cities
 - [Google maps distance matrix api](https://developers.google.com/maps/documentation/distance-matrix/overview) used for obtaining driving distances and durations between cities.
+- Airlabs [Airports](https://airlabs.co/docs/airports) and [Schedules](https://airlabs.co/docs/schedules) API used for getting airport coordinates and snapshots of flight schedules.
 
 ## Tabular files
 
@@ -70,6 +71,10 @@ Contains the same structure as **City_train_network.gml** except that it has wei
 ### City_car_network.gml
 A netowrk containing all cities from the **chronotrains.csv** file that have a valid id. The constructed graphs should be fully connected. Each edge has two attributes; distance (meters) and duration (seconds). If a edge does not exist, there exist no connection between the locations according to the google maps api. 
 
+### airport_network
+A network containing all airports from **airport_metadata.csv**. Nodes are labeled by IATA codes and contain the name of their closest city as attribute. Edges contain the distance (in meters) between airports, **not** city centers. All airports are connected to each other in this network, even if no actual plane route exists. 
 
+### flight_network
+A network like **airport_network.glm** extended with calculated durations between airports. Nodes are labeled by city names. Edges contain distance (in meters) and duration (in seconds).
 
 

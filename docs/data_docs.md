@@ -75,6 +75,6 @@ A netowrk containing all cities from the **chronotrains.csv** file that have a v
 A network containing all airports from **airport_metadata.csv**. Nodes are labeled by IATA codes and contain the name of their closest city as attribute. Edges contain the distance (in meters) between airports, **not** city centers. All airports are connected to each other in this network, even if no actual plane route exists. 
 
 ### flight_network
-A network like **airport_network.glm** extended with calculated durations between airports. Nodes are labeled by city names. Edges contain distance (in meters) and duration (in seconds).
+A network like **airport_network.glm** extended with calculated durations between airports. Nodes are labeled by city names. Edges contain distance (in meters) and duration (in seconds). The duration includes the defined boarding (30 minutes) + alight (15 minutes) time.
 
 

@@ -71,10 +71,10 @@ Contains the same structure as **City_train_network.gml** except that it has wei
 ### City_car_network.gml
 A netowrk containing all cities from the **chronotrains.csv** file that have a valid id. The constructed graphs should be fully connected. Each edge has two attributes; distance (meters) and duration (seconds). If a edge does not exist, there exist no connection between the locations according to the google maps api. 
 
-### airport_network
-A network containing all airports from **airport_metadata.csv**. Nodes are labeled by IATA codes and contain the name of their closest city as attribute. Edges contain the distance (in meters) between airports, **not** city centers. All airports are connected to each other in this network, even if no actual plane route exists. 
+### airport_network.gml
+A network connecting all airports from **airport_metadata.csv**.
 
-### flight_network
-A network like **airport_network.glm** extended with calculated durations between airports. Nodes are labeled by city names. Edges contain distance (in meters) and duration (in seconds). The duration includes the defined boarding (30 minutes) + alight (15 minutes) time.
+Nodes are labeled by IATA codes and contain the name of their closest city as attribute.\
+Edges contain the distance (in meters) and flight duration (in minutes) between airports, **not** city centers.
 
-
+The duration includes the defined boarding (30 minutes) + alight (15 minutes) time.

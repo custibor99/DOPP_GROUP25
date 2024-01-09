@@ -1,0 +1,265 @@
+chronotrain_id,city,Airport,Country,IATA airport code,ICAO airport code
+8302063.0,Tirana,Tirana Airport,Albania,TIA,LATI
+,Zvartnots,Yerevan Zvartnots Airport,Armenia,EVN,UDYZ
+2778067.0,Graz,Graz Airport,Austria,GRZ,LOWG
+2775220.0,Innsbruck,Innsbruck Airport,Austria,INN,LOWI
+2774326.0,Klagenfurt,Klagenfurt Airport,Austria,KLU,LOWK
+2772400.0,Linz,Linz Airport,Austria,LNZ,LOWL
+2766824.0,Salzburg,Salzburg Airport,Austria,SZG,LOWS
+2761369.0,Vienna,Vienna Airport,Austria,VIE,LOWW
+685948.0,Baku,Baku Airport,Azerbaijan,GYD,UBBB
+5102293.0,Minsk,Minsk Airport,Belarus,MSQ,UMMS
+2803138.0,Antwerp,Antwerp Airport,Belgium,ANR,EBAW
+2800866.0,Brussels,Brussels Airport,Belgium,BRU,EBBR
+2800481.0,Charleroi,Charleroi Airport,Belgium,CRL,EBCI
+2792413.0,Liege,Liege Airport,Belgium,LGG,EBLG
+2789786.0,Ostend,Ostend Bruges Airport,Belgium,OST,EBOS
+,Sarajevo,Sarajevo Airport,Bosnia and Herzegovina,SJJ,LQSA
+5381107.0,Tuzla,Tuzla Airport,Bosnia and Herzegovina,TZL,LQTZ
+2960316.0,Burgas,Burgas Airport,Bulgaria,BOJ,LBBG
+727011.0,Sofia,Sofia Airport,Bulgaria,SOF,LBSF
+726050.0,Varna,Varna Airport,Bulgaria,VAR,LBWN
+,Dubrovnik,Dubrovnik Airport,Croatia,DBV,LDDU
+2644210.0,Pula,Pula Airport,Croatia,PUY,LDPL
+3191648.0,Rijeka,Rijeka Krk Airport,Croatia,RJK,LDRI
+3190261.0,Split,Split Airport,Croatia,SPU,LDSP
+,Zadar,Zadar Airport,Croatia,ZAD,LDZD
+3186886.0,Zagreb,Zagreb Airport,Croatia,ZAG,LDZA
+,Larnaca,Larnaca Airport,Cyprus,LCA,LCLK
+,Paphos,Paphos Airport,Cyprus,PFO,LCPH
+3078610.0,Brno,Brno Airport,Czech Republic,BRQ,LKTB
+3067696.0,Prague,Prague Airport,Czech Republic,PRG,LKPR
+2624886.0,Aalborg,Aalborg Airport,Denmark,AAL,EKYT
+2624652.0,Aarhus,Aarhus Airport,Denmark,AAR,EKAH
+,Billund,Billund Airport,Denmark,BLL,EKBI
+2618425.0,Copenhagen,Copenhagen Airport,Denmark,CPH,EKCH
+,Vágar,Vágar Airport,Denmark,FAE,EKVG
+,Tallinn,Tallinn Airport,Estonia,TLL,EETN
+658225.0,Helsinki,Helsinki Airport,Finland,HEL,EFHK
+,Kittilä,Kittilä Airport,Finland,KTT,EFKT
+643492.0,Oulu,Oulu Airport,Finland,OUL,EFOU
+638936.0,Rovaniemi,Rovaniemi Airport,Finland,RVN,EFRO
+634963.0,Tampere,Tampere Airport,Finland,TMP,EFTP
+633679.0,Turku,Turku Airport,Finland,TKU,EFTU
+632978.0,Vaasa,Vaasa Airport,Finland,VAA,EFVA
+,Ajaccio,Ajaccio Airport,France,AJA,LFKJ
+3110044.0,Bastia,Bastia Airport,France,BIA,LFKB
+8702816.0,Bergerac,Bergerac Airport,France,EGC,LFBE
+8700114.0,Biarritz,Biarritz Airport,France,BIQ,LFBZ
+3031582.0,Bordeaux,Bordeaux Airport,France,BOD,LFBD
+3030300.0,Brest,Brest Bretagne Airport,France,BES,LFRB
+,Figari,Figari South Corsica Airport,France,FSC,LFKF
+3147465.0,Lille,Lille Airport,France,LIL,LFQQ
+8702384.0,Lyon-St,Lyon-Saint Exupéry Airport,France,LYS,LFLL
+2995469.0,Marseille,Marseille Airport,France,MRS,LFML
+2992166.0,Montpellier,Montpellier Airport,France,MPL,LFMT
+2990969.0,Nantes,Nantes Airport,France,NTE,LFRS
+2990440.0,Nice,Nice Airport,France,NCE,LFMN
+2988507.0,Paris,Paris Beauvais Airport,France,BVA,LFOB
+2988507.0,Paris,Paris Charles de Gaulle Airport,France,CDG,LFPG
+2988507.0,Paris,Paris Orly Airport,France,ORY,LFPO
+2983990.0,Rennes,Rennes Bretagne Airport,France,RNS,LFRN
+2972191.0,Réunion,Réunion Roland Garros Airport,France,RUN,FMEE
+2973783.0,Strasbourg,Strasbourg Airport,France,SXB,LFST
+,Toulonères,Toulon-Hyères Airport,France,TLN,LFTH
+2972315.0,Toulouse,Toulouse Blagnac Airport,France,TLS,LFBO
+,Kutaisi,Kutaisi Airport,Georgia,KUT,UGKO
+,Tbilisi,Tbilisi Airport,Georgia,TBS,UGTB
+8000249.0,Memmingen,Allgäu Airport Memmingen,Germany,FMM,EDJA
+8089044.0,Berlin Brandenburg,Berlin Brandenburg Airport,Germany,BER,EDDB
+2944388.0,Bremen,Bremen Airport,Germany,BRE,EDDW
+2886242.0,Cologne,Cologne Bonn Airport,Germany,CGN,EDDK
+2935517.0,Dortmund,Dortmund Airport,Germany,DTM,EDLW
+2935022.0,Dresden,Dresden Airport,Germany,DRS,EDDC
+2934246.0,Düsseldorf,Düsseldorf Airport,Germany,DUS,EDDL
+2925533.0,Frankfurt,Frankfurt Airport,Germany,FRA,EDDF
+2925533.0,Frankfurt,Frankfurt-Hahn Airport,Germany,HHN,EDFH
+8002120.0,Friedrichshafen,Friedrichshafen Airport,Germany,FDH,EDNY
+2911298.0,Hamburg,Hamburg Airport,Germany,HAM,EDDH
+2910831.0,Hanover,Hanover Airport,Germany,HAJ,EDDV
+2892794.0,Karlsruhe,Karlsruhe Baden-Baden Airport,Germany,FKB,EDSB
+2879139.0,Leipzig,Leipzig Halle Airport,Germany,LEJ,EDDP
+2867714.0,Munich,Munich Airport,Germany,MUC,EDDM
+,Münsterück,Münster Osnabrück Airport,Germany,FMO,EDDG
+2861650.0,Nuremberg,Nuremberg Airport,Germany,NUE,EDDN
+8000297.0,Paderborn,Paderborn Lippstadt Airport,Germany,PAD,EDLP
+2825297.0,Stuttgart,Stuttgart Airport,Germany,STR,EDDS
+8006240.0,Weeze,Weeze Airport,Germany,NRN,EDLV
+,Aktion,Aktion Airport,Greece,PVK,LGPZ
+264371.0,Athens,Athens Airport,Greece,ATH,LGAV
+,Chania,Chania Airport,Greece,CHQ,LGSA
+,Corfu,Corfu Airport,Greece,CFU,LGKR
+,Heraklion,Heraklion Airport,Greece,HER,LGIR
+,Kefalonia,Kefalonia Airport,Greece,EFL,LGKF
+724443.0,Kos,Kos Airport,Greece,KGS,LGKO
+,Lesvos,Lesvos Mytilene Airport,Greece,MJT,LGMT
+,Mykonos,Mykonos Airport,Greece,JMK,LGMK
+,Rhodes,Rhodes Airport,Greece,RHO,LGRP
+5103270.0,Samos,Samos Airport,Greece,SMI,LGSM
+,Santorini,Santorini Airport,Greece,JTR,LGSR
+,Skiathos,Skiathos Airport,Greece,JSI,LGSK
+734077.0,Thessaloniki,Thessaloniki Airport,Greece,SKG,LGTS
+,Zante,Zante Airport,Greece,ZTH,LGZA
+3054643.0,Budapest,Budapest Airport,Hungary,BUD,LHBP
+721472.0,Debrecen,Debrecen Airport,Hungary,DEB,LHDC
+,Keflavik,Keflavik Airport,Iceland,KEF,BIKF
+2965140.0,Cork,Cork Airport,Ireland,ORK,EICK
+2964574.0,Dublin,Dublin Airport,Ireland,DUB,EIDW
+6010012.0,Knock,Ireland West Airport Knock,Ireland,NOC,EIKN
+,Kerry,Kerry Airport,Ireland,KIR,EIKY
+6000022.0,Shannon,Shannon Airport,Ireland,SNN,EINN
+,Alghero,Alghero Airport,Italy,AHO,LIEA
+8336329.0,Ancona,Ancona Airport,Italy,AOI,LIPY
+2988507.0,Bari,Bari Airport,Italy,BRI,LIBD
+3182164.0,Bergamo,Bergamo Airport,Italy,BGY,LIME
+3181928.0,Bologna,Bologna Airport,Italy,BLQ,LIPE
+8311139.0,Brindisi,Brindisi Airport,Italy,BDS,LIBR
+,Cagliari,Cagliari Airport,Italy,CAG,LIEE
+2525068.0,Catania,Catania Fontanarossa Airport,Italy,CTA,LICC
+8302524.0,Comiso,Comiso Airport,Italy,CIY,LICB
+3176959.0,Florence,Florence Airport,Italy,FLR,LIRQ
+3176219.0,Genoa,Genoa Airport,Italy,GOA,LIMJ
+8300328.0,Lamezia Terme,Lamezia Terme Airport,Italy,SUF,LICA
+3173435.0,Milan,Milan Linate Airport,Italy,LIN,LIML
+3173435.0,Milan,Milan Malpensa Airport,Italy,MXP,LIMC
+3172394.0,Naples,Naples Airport,Italy,NAP,LIRN
+8300874.0,Olbia,Olbia Costa Smeralda Airport,Italy,OLB,LIEO
+2523920.0,Palermo,Palermo Airport,Italy,PMO,LICJ
+3171180.0,Perugia,Perugia Airport,Italy,PEG,LIRZ
+3171168.0,Pescara,Pescara Airport,Italy,PSR,LIBP
+3170647.0,Pisa,Pisa Airport,Italy,PSA,LIRP
+3169070.0,Rome,Rome Ciampino Airport,Italy,CIA,LIRA
+3169070.0,Rome,Rome Fiumicino Airport,Italy,FCO,LIRF
+8300340.0,Trapani,Trapani Airport,Italy,TPS,LICT
+8300130.0,Treviso,Treviso Airport,Italy,TSF,LIPH
+3165185.0,Trieste,Trieste Airport,Italy,TRS,LIPQ
+3165524.0,Turin,Turin Airport,Italy,TRN,LIMF
+,Venice,Venice Airport,Italy,VCE,LIPZ
+3164527.0,Verona,Verona Airport,Italy,VRN,LIPX
+,Almaty,Almaty Airport,Kazakhstan,ALA,UAAA
+,Astana,Nursultan Nazarbayev Airport,Kazakhstan,TSE,UACC
+,Pristina,Pristina Airport,Kosovo,PRN,BKPR
+2262963.0,Riga,Riga Airport,Latvia,RIX,EVRA
+598316.0,Kaunas,Kaunas Airport,Lithuania,KUN,EYKA
+593116.0,Vilnius,Vilnius Airport,Lithuania,VNO,EYVI
+2960316.0,Luxembourg,Luxembourg Airport,Luxembourg,LUX,ELLX
+,Malta,Malta Airport,Malta,MLA,LMML
+618426.0,Chisinau,Chisinau Airport,Moldova,KIV,LUKK
+3193044.0,Podgorica,Podgorica Airport,Montenegro,TGD,LYPG
+,Tivat,Tivat Airport,Montenegro,TIV,LYTV
+2759794.0,Amsterdam,Amsterdam Airport Schiphol,Netherlands,AMS,EHAM
+2756253.0,Eindhoven,Eindhoven Airport,Netherlands,EIN,EHEH
+2755251.0,Groningen,Groningen Airport Eelde,Netherlands,GRQ,EHGG
+2751283.0,Maastricht,Maastricht Aachen Airport,Netherlands,MST,EHBK
+2747891.0,Rotterdam,Rotterdam The Hague Airport,Netherlands,RTM,EHRD
+785842.0,Skopje,Skopje Airport,North Macedonia,SKP,LWSK
+,Ålesund,Ålesund Airport,Norway,AES,ENAL
+3161732.0,Bergen,Bergen Airport,Norway,BGO,ENBR
+3160881.0,Bodø,Bodø Airport,Norway,BOO,ENBO
+,Haugesund,Haugesund Airport,Norway,HAU,ENHD
+3149318.0,Kristiansand,Kristiansand Airport,Norway,KRS,ENCN
+3143244.0,Oslo,Oslo Airport,Norway,OSL,ENGM
+3140390.0,Sandefjord,Sandefjord Airport Torp,Norway,TRF,ENTO
+3137115.0,Stavanger,Stavanger Airport,Norway,SVG,ENZV
+,Tromsø,Tromsø Airport,Norway,TOS,ENTC
+3133880.0,Trondheim,Trondheim Airport,Norway,TRD,ENVA
+3099434.0,Gdansk,Gdansk Airport,Poland,GDN,EPGD
+3096472.0,Katowice,Katowice Airport,Poland,KTW,EPKT
+3094802.0,Kraków,Kraków Airport,Poland,KRK,EPKK
+3088171.0,Poznan,Poznan Airport,Poland,POZ,EPPO
+5104689.0,Szczecin-Goleniów,Szczecin-Goleniów Airport,Poland,SZZ,EPSC
+756135.0,Warsaw,Warsaw Airport,Poland,WAW,EPWA
+756135.0,Warsaw,Warsaw Modlin Airport,Poland,WMI,EPMO
+3081368.0,Wroclaw,Wroclaw Airport,Poland,WRO,EPWR
+2268339.0,Faro,Faro Airport,Portugal,FAO,LPFR
+2267057.0,Lisbon,Lisbon Airport,Portugal,LIS,LPPT
+9400531.0,Madeira,Madeira Airport,Portugal,FNC,LPMA
+,Ponta Delgada,Ponta Delgada Airport,Portugal,PDL,LPPD
+2735943.0,Porto,Porto Airport,Portugal,OPO,LPPR
+683506.0,Bucharest,Bucharest Henri Coanda Airport,Romania,OTP,LROP
+681290.0,Cluj-Napoca,Cluj-Napoca Airport,Romania,CLJ,LRCL
+675810.0,Iasi,Iasi Airport,Romania,IAS,LRIA
+667268.0,Sibiu,Sibiu Airport,Romania,SBZ,LRSB
+665087.0,Timisoara,Timisoara Airport,Romania,TSR,LRTR
+,Krasnodar,Krasnodar Airport,Russia,KRR,URKK
+,Moscow,Moscow Domodedovo Airport,Russia,DME,UUDD
+,Moscow,Moscow Sheremetyevo Airport,Russia,SVO,UUEE
+,Moscow,Moscow Vnukovo Airport,Russia,VKO,UUWW
+,Saint Petersburg,Saint Petersburg Pulkovo Airport,Russia,LED,ULLI
+,Sochi,Sochi Airport,Russia,AER,URSS
+792680.0,Belgrade,Belgrade Nikola Tesla Airport,Serbia,BEG,LYBE
+593116.0,Niš,Niš Airport,Serbia,INI,LYNI
+3060972.0,Bratislava,Bratislava Airport,Slovakia,BTS,LZIB
+724443.0,Košice,Košice Airport,Slovakia,KSC,LZKZ
+3196359.0,Ljubljana,Ljubljana Airport,Slovenia,LJU,LJLJ
+2521978.0,Alicante,Alicante Airport,Spain,ALC,LEAL
+2521886.0,Almeria,Almeria Airport,Spain,LEI,LEAM
+7115401.0,Asturias,Asturias Airport,Spain,OVD,LEAS
+3128760.0,Barcelona,Barcelona Airport,Spain,BCN,LEBL
+3128026.0,Bilbao,Bilbao Airport,Spain,BIO,LEBB
+,Fuerteventura,Fuerteventura Airport,Spain,FUE,GCFV
+7100077.0,Girona,Girona Airport,Spain,GRO,LEGE
+,Gran Canaria,Gran Canaria Airport,Spain,LPA,GCLP
+,Granadaén,Granada-Jaén Airport,Spain,GRX,LEGR
+,Ibiza,Ibiza Airport,Spain,IBZ,LEIB
+2516326.0,Jerez,Jerez Airport,Spain,XRY,LEJR
+7100112.0,La Palma,La Palma Airport,Spain,SPC,GCLA
+,Lanzarote,Lanzarote Airport,Spain,ACE,GCRR
+3117735.0,Madrid,Madrid Barajas Airport,Spain,MAD,LEMD
+2514256.0,Malaga,Malaga Airport,Spain,AGP,LEMG
+,Menorca,Menorca Airport,Spain,MAH,LEMH
+,Palma de Mallorca,Palma de Mallorca Airport,Spain,PMI,LEPA
+,Región de Murcia,Región de Murcia Airport,Spain,RMU,LEMI
+255274.0,Reus,Reus Airport,Spain,REU,LERS
+3109718.0,Santander,Santander Airport,Spain,SDR,LEXJ
+7100028.0,Santiago de Compostela,Santiago de Compostela Airport,Spain,SCQ,LEST
+2510911.0,Seville,Seville Airport,Spain,SVQ,LEZL
+,Tenerife,Tenerife North Airport,Spain,TFN,GCXO
+,Tenerife,Tenerife South Airport,Spain,TFS,GCTS
+2509954.0,Valencia,Valencia Airport,Spain,VLC,LEVC
+3104324.0,Zaragoza,Zaragoza Airport,Spain,ZAZ,LEZG
+2711537.0,Gothenburg,Gothenburg Landvetter Airport,Sweden,GOT,ESGG
+2692969.0,Malmö,Malmö Airport,Sweden,MMX,ESMS
+2673730.0,Stockholm,Stockholm Arlanda Airport,Sweden,ARN,ESSA
+2673730.0,Stockholm,Stockholm Bromma Airport,Sweden,BMA,ESSB
+2673730.0,Stockholm,Stockholm Skavsta Airport,Sweden,NYO,ESKN
+3128760.0,Basel,Basel Mulhouse Freiburg Airport,Switzerland,BSL,LFSB
+2660646.0,Geneva,Geneva Airport,Switzerland,GVA,LSGG
+2657896.0,Zurich,Zurich Airport,Switzerland,ZRH,LSZH
+2643743.0,Adana,Adana Airport,Turkey,ADA,LTAF
+7500010.0,Ankara,Ankara Esenboga Airport,Turkey,ESB,LTAC
+,Antalya,Antalya Airport,Turkey,AYT,LTAI
+,Dalaman,Dalaman Airport,Turkey,DLM,LTBS
+7501624.0,Istanbul,Istanbul Airport,Turkey,IST,LTFM
+,Istanbulökcen,Istanbul Sabiha Gökcen Airport,Turkey,SAW,LTFJ
+7500031.0,Izmir,Izmir Adnan Menderes Airport,Turkey,ADB,LTBJ
+,Milas,Milas-Bodrum Airport,Turkey,BJV,LTFE
+,Trabzon,Trabzon Airport,Turkey,TZX,LTCG
+2200044.0,Kharkiv,Kharkiv Airport,Ukraine,HRK,UKHH
+2200005.0,Kiev,Kiev Boryspil Airport,Ukraine,KBP,UKBB
+2200005.0,Kiev,Kiev Zhuliany Airport,Ukraine,IEV,UKKK
+2200025.0,Lviv,Lviv Airport,Ukraine,LWO,UKLL
+2200063.0,Odessa,Odessa Airport,Ukraine,ODS,UKOO
+2657832.0,Aberdeen,Aberdeen Airport,United Kingdom,ABZ,EGPD
+2655984.0,Belfast,Belfast City Airport,United Kingdom,BHD,EGAC
+2655984.0,Belfast,Belfast International Airport,United Kingdom,BFS,EGAA
+2655603.0,Birmingham,Birmingham Airport,United Kingdom,BHX,EGBB
+2654675.0,Bristol,Bristol Airport,United Kingdom,BRS,EGGD
+2653822.0,Cardiff,Cardiff Airport,United Kingdom,CWL,EGFF
+7003040.0,East Midlands,East Midlands Airport,United Kingdom,EMA,EGNX
+2650225.0,Edinburgh,Edinburgh Airport,United Kingdom,EDI,EGPH
+7000819.0,Exeter,Exeter Airport,United Kingdom,EXT,EGTE
+2648579.0,Glasgow,Glasgow Airport,United Kingdom,GLA,EGPF
+2648579.0,Glasgow,Glasgow Prestwick Airport,United Kingdom,PIK,EGPK
+,Jersey,Jersey Airport,United Kingdom,JER,EGJJ
+2644688.0,Leeds,Leeds Bradford Airport,United Kingdom,LBA,EGNM
+2644210.0,Liverpool,Liverpool Airport,United Kingdom,LPL,EGGP
+2643743.0,London,London City Airport,United Kingdom,LCY,EGLC
+2643743.0,London,London Gatwick Airport,United Kingdom,LGW,EGKK
+2643743.0,London,London Heathrow Airport,United Kingdom,LHR,EGLL
+2643743.0,London,London Luton Airport,United Kingdom,LTN,EGGW
+2643743.0,London,London Southend Airport,United Kingdom,SEN,EGMC
+2643743.0,London,London Stansted Airport,United Kingdom,STN,EGSS
+2643123.0,Manchester,Manchester Airport,United Kingdom,MAN,EGCC
+2641673.0,Newcastle,Newcastle Airport,United Kingdom,NCL,EGNT
+2637487.0,Southampton,Southampton Airport,United Kingdom,SOU,EGHI

@@ -5,6 +5,5 @@
 *.ipynb_checkpoints
 *.egg-info
 */.idea/*
-*/data/*
 */images/*
 

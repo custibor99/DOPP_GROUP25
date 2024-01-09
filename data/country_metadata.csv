@@ -1,0 +1,47 @@
+Country,iso_country_code,neighbors
+Albania,ALB,"MNE,GRC,MKD"
+Armenia,ARM,"AZE,GEO,TUR"
+Austria,AUT,"CZE,DEU,HUN,ITA,SVK,SVN,CHE"
+Azerbaijan,AZE,"ARM,GEO,RUS,TUR"
+Belarus,BLR,"LVA,LTU,POL,RUS,UKR"
+Belgium,BEL,"FRA,DEU,LUX,NLD"
+Bosnia and Herzegovina,BIH,"HRV,MNE,SRB"
+Bulgaria,BGR,"GRC,MKD,ROU,SRB,TUR"
+Croatia,HRV,"BIH,HUN,MNE,SRB,SVN"
+Cyprus,CYP,
+Czech Republic,CZE,"AUT,DEU,POL,SVK"
+Denmark,DNK,DEU
+Estonia,EST,"LVA,RUS"
+Finland,FIN,"NOR,SWE,RUS"
+France,FRA,"BEL,DEU,ITA,LUX,ESP,CHE,GBR"
+Georgia,GEO,"ARM,AZE,RUS,TUR"
+Germany,DEU,"AUT,BEL,CZE,DNK,FRA,LUX,NLD,POL,CHE"
+Greece,GRC,"ALB,BGR,TUR,MKD"
+Hungary,HUN,"AUT,HRV,ROU,SRB,SVK,SVN,UKR"
+Iceland,ISL,
+Ireland,IRL,GBR
+Italy,ITA,"AUT,FRA,SVN,CHE"
+Kazakhstan,KAZ,RUS
+Kosovo,XKK,"MNE,SRB,MKD,ALB"
+Latvia,LVA,"BLR,EST,LTU,RUS"
+Lithuania,LTU,"BLR,LVA,POL,RUS"
+Luxembourg,LUX,"BEL,FRA,DEU"
+Malta,MLT,
+Moldova,MDA,"ROU,UKR"
+Montenegro,MNE,"XKK,ALB,HRV,SRB,BIH"
+Netherlands,NLD,"BEL,DEU"
+North Macedonia,MKD,"ALB,XKK,SRB,GRC,BGR"
+Norway,NOR,"FIN,SWE,RUS"
+Poland,POL,"BLR,CZE,DEU,LTU,RUS,SVK,UKR"
+Portugal,PRT,ESP
+Romania,ROU,"BGR,HUN,MDA,SRB,UKR"
+Russia,RUS,"AZE,BLR,EST,FIN,GEO,KAZ,LVA,LTU,NOR,POL,UKR"
+Serbia,SRB,"HUN,ROU,BGR,MKD,HRV,BIH,MNE,ALB"
+Slovakia,SVK,"AUT,CZE,HUN,POL,UKR"
+Slovenia,SVN,"AUT,HRV,ITA,HUN"
+Spain,ESP,"FRA,PRT"
+Sweden,SWE,"FIN,NOR,DNK"
+Switzerland,CHE,"AUT,FRA,ITA,DEU"
+Turkey,TUR,"ARM,AZE,BGR,GEO,GRC"
+Ukraine,UKR,"BLR,HUN,MDA,POL,ROU,RUS,SVK"
+United Kingdom,GBR,"IRL,FRA"

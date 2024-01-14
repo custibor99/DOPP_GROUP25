@@ -8,6 +8,7 @@ import getCarDurations
 import getAirportCoordinates
 import cleanTabularData
 import combineGraphData
+import getCityAirportStationDurations
 
 def main():
     # Fetch data
@@ -22,6 +23,7 @@ def main():
 
     # Clean and transform data
     cleanTabularData.main()
+    getCityAirportStationDurations.main()
     combineGraphData.main()
     # Final cleanup
 

@@ -52,6 +52,16 @@ def add_plane_durations(G: nx.Graph, plane_network: nx.Graph) -> nx.Graph:
             G.add_edge(source, dest, duration=duration, distance=distance, type="plane")
     return G
 
+def add_city_to_location_durations(G: nx.Graph, all_data: pd.DataFrame) -> nx.Graph:
+    for row in all_data.iterrows():
+        val = row[1]
+        iata_code = val["iata_code"]
+        city = val["city"]
+        station = city + " Station"
+        G.add_edge(city, station, duration=val["station_duration"], type="car")
+        G.add_edge(city, iata_code, duration=val["airport_duration"], type="car")
+    return G
+    
 def main():
     df = pd.read_csv("../data/clean/all_data.csv")
     airport_data = df[["Airport", "iata_code", "icao_code", "airport_lat", "airport_lng"]].drop_duplicates()
@@ -69,6 +79,7 @@ def main():
     G = add_train_durations(G, train_graph)
     G = add_car_durations(G, car_graph)
     G = add_plane_durations(G, plane_network)
+    G = add_city_to_location_durations(G, df)
     nx.write_gml(G, "../data/clean/all_routes.gml")
 
 if __name__ == "__main__":

@@ -64,6 +64,9 @@ def add_city_to_location_durations(G: nx.Graph, all_data: pd.DataFrame) -> nx.Gr
     
 def main():
     df = pd.read_csv("../data/clean/all_data.csv")
+    mask = df["station_duration"] <= 250
+    df = df.loc[mask]
+    df.to_csv("../data/clean/all_data.csv")
     airport_data = df[["Airport", "iata_code", "icao_code", "airport_lat", "airport_lng"]].drop_duplicates()
     city_data = df[["city", "city_lat", "city_lng"]].drop_duplicates()
     station_data = df[["city", "chronotrain_id", "train_station_lat", "train_station_lng"]].drop_duplicates()
@@ -80,6 +83,15 @@ def main():
     G = add_car_durations(G, car_graph)
     G = add_plane_durations(G, plane_network)
     G = add_city_to_location_durations(G, df)
+    G.remove_node("Lyon-St")
+    G.remove_node("Athens")
+    G.remove_node("Podgorica")
+    G.remove_node("Skopje")
+    G.remove_node("Belgrade")
+    G.remove_node("Ankara")
+    G.remove_node("Istanbul")
+    G.remove_node("Izmir")
+    G.remove_node("Thessaloniki")
     nx.write_gml(G, "../data/clean/all_routes.gml")
 
 if __name__ == "__main__":

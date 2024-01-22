@@ -16,7 +16,9 @@ setup(
         "countryinfo==0.1.2",
         "networkx==3.2.1",
         "tqdm==4.66.1",
-        "requests==2.31.0"
+        "requests==2.31.0",
+        "geopy==2.4.1",
+        "folium==0.15.1"
     ],
     packages=find_packages(),
     classifiers=[

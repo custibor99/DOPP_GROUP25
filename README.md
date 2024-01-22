@@ -1,5 +1,5 @@
 # Notebook
-The final notebook for grading is located in notebooks/Report.ipynb
+The final notebook for grading is located in [notebooks/Report.ipynb](notebooks/Report.ipynb)
 
 # Instalation guide 
 To install all of the neccessary python libraries please first install [conda](https://docs.conda.io/projects/conda/en/latest/index.html]) on your computer. 
